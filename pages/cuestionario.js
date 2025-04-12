@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography'; // Asegúrate de que Typography esté importado
+import preguntas from '@/components/preguntas'; // Asegúrate de que la ruta sea correcta
 
 export default function Cuestionario() {
   React.useEffect(() => { document.title = 'Simulador | Cuestionario'; }, []);
