@@ -8,7 +8,14 @@ export default function Home() {
   React.useEffect(() => { document.title = 'Simulador | Inicio' }, [])
   return (
     <Layout>
-      <Card sx={{ width: '450px' }}>
+      <Card sx={{
+        width: '450px',
+        margin: '2rem auto',
+        padding: '1rem',
+        borderRadius: '12px',
+        backgroundColor: theme.palette.background.paper,
+        boxShadow: theme.shadows[3],
+      }}>
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">Absoluta discreción</Typography>
           <Typography gutterBottom variant="subtitle1" component='div'>Tuto!</Typography>
