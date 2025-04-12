@@ -1,16 +1,15 @@
 import Layout from "@/components/Layout";
 import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles'; // Asegúrate de que useTheme esté importado
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import preguntas from "@/components/preguntas";
+import Typography from '@mui/material/Typography'; // Asegúrate de que Typography esté importado
 
 export default function Cuestionario() {
   React.useEffect(() => { document.title = 'Simulador | Cuestionario'; }, []);
-  const theme = useTheme();
+  const theme = useTheme(); // Asegúrate de definir theme aquí
 
   return (
     <Layout>
@@ -20,7 +19,7 @@ export default function Cuestionario() {
             <Grid key={index} item xs={12} sm={6} md={4}>
               <Card
                 sx={{
-                  backgroundColor: theme.palette.background.paper,
+                  backgroundColor: theme.palette.background.paper, // Aquí se usa theme
                   boxShadow: theme.shadows[3],
                   borderRadius: '12px',
                   padding: '1rem',
