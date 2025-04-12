@@ -3,9 +3,12 @@ import * as React from 'react'
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { useTheme } from '@mui/material/styles'; // Asegúrate de que useTheme esté importado
 
 export default function Home() {
   React.useEffect(() => { document.title = 'Simulador | Inicio' }, [])
+  const theme = useTheme(); // Asegúrate de definir theme aquí
+  
   return (
     <Layout>
       <Card sx={{
