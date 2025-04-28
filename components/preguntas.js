@@ -2,7 +2,7 @@ const preguntas = [
   {
     titulo: "Seleccione el literal correcto. Cisco Packet Tracer es una herramienta de:",
     opciones: [
-      { textoRespuesta: "enseñanza y aprendizaje de softwares que ofrece una combinación única de experiencias de programación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia.", isCorrect: false },
+      { textoRespuesta: "enseñanza y aprendizaje de softwares que ofrece una combinación única de experiencias de programación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia.", isCorrect: true },
       { textoRespuesta: "enseñanza y aprendizaje de tecnología de redes que ofrece una combinación única de experiencias de simulación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia.", isCorrect: true },
       { textoRespuesta: "enseñanza y aprendizaje de hardware que nos brinda una maravillosa experiencia simulada, para saber ubicar las piezas de un computador,", isCorrect: false }
     ]
@@ -94,7 +94,7 @@ const preguntas = [
   {
     titulo: "Marque lo Correcto. Protocolo que utiliza direcciones series de cuatro octetos con formato de punto decimal, este protocolo lleva los datos a otras máquinas de la red.",
     opciones: [
-      { textoRespuesta: "IP", isCorrect: false },
+      { textoRespuesta: "IP", isCorrect: true },
       { textoRespuesta: "TCP", isCorrect: false },
       { textoRespuesta: "WAN", isCorrect: false },
       { textoRespuesta: "DARPA", isCorrect: false }
@@ -462,7 +462,7 @@ const preguntas = [
   {
     titulo: "Al conjunto de protocolos y estándares que sirven para intercambiar datos entre aplicaciones, se conoce como:",
     opciones: [
-      { textoRespuesta: "Servidor web", isCorrect: false },
+      { textoRespuesta: "Servidor web", isCorrect: true },
       { textoRespuesta: "Servidor de aplicaciones", isCorrect: false },
       { textoRespuesta: "Servicio web", isCorrect: false },
       { textoRespuesta: "Aplicación web", isCorrect: false }
@@ -471,7 +471,7 @@ const preguntas = [
   {
     titulo: "Un ataque CSRF es:",
     opciones: [
-      { textoRespuesta: "La inyección de <scripts> maliciosos por parte del usuario, que se ejecutaran al momento de cargar este contenido en la página web.", isCorrect: false },
+      { textoRespuesta: "La inyección de <scripts> maliciosos por parte del usuario, que se ejecutaran al momento de cargar este contenido en la página web.", isCorrect: true },
       { textoRespuesta: "Consisten en forzar a un usuario a ejecutar peticiones no deseadas a una web en la que están autentificados sin que este se dé cuenta.", isCorrect: false },
       { textoRespuesta: "La ejecución de códigos que permiten acceder al sitio e implantar un malware, que facilitará la ejecución de código de manera remota", isCorrect: false },
       { textoRespuesta: "Ninguna de las opciones es correcta.", isCorrect: false }
