@@ -1,599 +1,543 @@
 const preguntas = [
-  {
-    titulo: "Seleccione el literal correcto. Cisco Packet Tracer es una herramienta de:",
-    opciones: [
-      { textoRespuesta: "enseñanza y aprendizaje de softwares que ofrece una combinación única de experiencias de programación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia.", isCorrect: true },
-      { textoRespuesta: "enseñanza y aprendizaje de tecnología de redes que ofrece una combinación única de experiencias de simulación y visualización realistas, evaluación, capacidades de creación de actividades y colaboración multiusuario y oportunidades de competencia.", isCorrect: true },
-      { textoRespuesta: "enseñanza y aprendizaje de hardware que nos brinda una maravillosa experiencia simulada, para saber ubicar las piezas de un computador,", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Qué es una red SAN:",
-    opciones: [
-      { textoRespuesta: "Es una red de área local virtual.", isCorrect: false },
-      { textoRespuesta: "Es una red de área amplia.", isCorrect: false },
-      { textoRespuesta: "Es una red de área de almacenamiento.", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Una de las características de los SWITCH es que:",
-    opciones: [
-      { textoRespuesta: "Permiten la transmisión de señal por medio de sus ondas electromagnéticas.", isCorrect: false },
-      { textoRespuesta: "Ellos son los únicos responsables de determinar el destino de los Cut-Throughts y enviarlos de manera eficiente.", isCorrect: true },
-      { textoRespuesta: "Cuando uno de sus puentes no recibe la señal, se conecta con el resto de sus puertos", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Subraye la respuesta correcta.",
-    opciones: [
-      { textoRespuesta: "Los ACCESS POINT son dispositivos para establecer una conexión por medio de cableado entre equipos y poder formar una red LAN.", isCorrect: false },
-      { textoRespuesta: "Los ACCESS POINT son dispositivos que establecen la trasmisión de datos por medio de antenas para crear una red inalámbrica interna WLAN.", isCorrect: false },
-      { textoRespuesta: "Los ACCESS POINT son dispositivos para establecer una conexión inalámbrica entre equipos y pueden formar una red inalámbrica externa (local o internet).", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "De cuantas partes está compuesto un Access Point",
-    opciones: [
-      { textoRespuesta: "1Cubierta, 2Indicadores, 3Antena, 4Conector RJ45, 5Conector DC", isCorrect: true },
-      { textoRespuesta: "1Cubierta, 2Antena, 3Conector RJ45.", isCorrect: false },
-      { textoRespuesta: "1Cubierta, 2Antena, 3ADSL, 4ConectorRJ45, 5Conector DC", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Entre los modelos de capas tcp/ip están?",
-    opciones: [
-      { textoRespuesta: "Aplicación, Transporte, Internet, Vínculo de datos, Red física", isCorrect: true },
-      { textoRespuesta: "cableado, lógica, internet", isCorrect: false },
-      { textoRespuesta: "aplicación, trasporte, red física", isCorrect: false },
-      { textoRespuesta: "proveedor, instalación", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La capa de transporte TCP/IP:",
-    opciones: [
-      { textoRespuesta: "garantiza que los paquetes lleguen en secuencia y sin errores", isCorrect: true },
-      { textoRespuesta: "No se puede alcanzar un sistema de destino.", isCorrect: false },
-      { textoRespuesta: "sirve para causar interferencias", isCorrect: false },
-      { textoRespuesta: "todas", isCorrect: false },
-      { textoRespuesta: "ninguna", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "El protocolo de mensajes de control de Internet (ICMP)",
-    opciones: [
-      { textoRespuesta: "detecta y registra las condiciones de error de la red", isCorrect: true },
-      { textoRespuesta: "proporciona un servicio de entrega de datagramas", isCorrect: false },
-      { textoRespuesta: "sirve para causar interferencias", isCorrect: false },
-      { textoRespuesta: "todas las anteriores", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Para que sirve el modo Bridge de un Acces point:",
-    opciones: [
-      { textoRespuesta: "sirve para extender la señal", isCorrect: false },
-      { textoRespuesta: "sirve como un puente inalámbrico entre dispositivos", isCorrect: true },
-      { textoRespuesta: "sirve para causar interferencias", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Aparte de modelo TCP/IP con que otro nombre se le llama:",
-    opciones: [
-      { textoRespuesta: "modelo COP", isCorrect: false },
-      { textoRespuesta: "modelo DARPA.", isCorrect: true },
-      { textoRespuesta: "modelo SAMUS", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Que define el FTP:",
-    opciones: [
-      { textoRespuesta: "el funcionamiento de navegadores", isCorrect: false },
-      { textoRespuesta: "interacción hombre-máquina", isCorrect: false },
-      { textoRespuesta: "cómo se envían archivos en una red", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Marque lo Correcto. Protocolo que utiliza direcciones series de cuatro octetos con formato de punto decimal, este protocolo lleva los datos a otras máquinas de la red.",
-    opciones: [
-      { textoRespuesta: "IP", isCorrect: true },
-      { textoRespuesta: "TCP", isCorrect: false },
-      { textoRespuesta: "WAN", isCorrect: false },
-      { textoRespuesta: "DARPA", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Cuáles son los parámetros de QOS.",
-    opciones: [
-      { textoRespuesta: "Hardware, software", isCorrect: false },
-      { textoRespuesta: "Diseño, prueba.", isCorrect: false },
-      { textoRespuesta: "Perdida de paquetes, Jitter, latencia, Ancho de Banda.", isCorrect: true },
-      { textoRespuesta: "Ninguna de las Anteriores.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Determine cuál de las siguientes NO es una característica de la arquitectura de red:",
-    opciones: [
-      { textoRespuesta: "Tolerancia a Fallas", isCorrect: false },
-      { textoRespuesta: "Escalabilidad", isCorrect: false },
-      { textoRespuesta: "Calidad de Servicio", isCorrect: false },
-      { textoRespuesta: "Seguridad", isCorrect: false },
-      { textoRespuesta: "Interconectividad", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Determine cuál de las siguientes NO es un parámetro de QOS.",
-    opciones: [
-      { textoRespuesta: "Jitter", isCorrect: false },
-      { textoRespuesta: "Ancho de banda", isCorrect: false },
-      { textoRespuesta: "Ruido electrónico", isCorrect: true },
-      { textoRespuesta: "Latencia", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Cuál es la frecuencia de banda de la IEEE-802?15.1 en Bluetooth en la WPAN?",
-    opciones: [
-      { textoRespuesta: "1 GHz", isCorrect: false },
-      { textoRespuesta: "2,4 GHz", isCorrect: true },
-      { textoRespuesta: "2,4 MHz", isCorrect: false },
-      { textoRespuesta: "Ninguna", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Cuánto alcance tiene un acces point",
-    opciones: [
-      { textoRespuesta: "30 a 100 metros", isCorrect: true },
-      { textoRespuesta: "60 a 300 metros", isCorrect: false },
-      { textoRespuesta: "10 a 600 metros", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Dónde se utiliza el protocolo WAP2 personal?",
-    opciones: [
-      { textoRespuesta: "Área domésticas", isCorrect: true },
-      { textoRespuesta: "Área metropolitanas", isCorrect: false },
-      { textoRespuesta: "Área extensas", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Cuál es la función del punto de acceso dentro del modo AP?",
-    opciones: [
-      { textoRespuesta: "Se utiliza como un receptor y actúa como un cable de red", isCorrect: false },
-      { textoRespuesta: "Sirve de núcleo para la instalación del cableado", isCorrect: true },
-      { textoRespuesta: "Se usa para extender la señal", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Cuáles son los tipos de conmutadores?",
-    opciones: [
-      { textoRespuesta: "Conmutador de router", isCorrect: false },
-      { textoRespuesta: "Conmutador de cortar – continuar", isCorrect: false },
-      { textoRespuesta: "Conmutador de grupo de trabajo y de red", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "En la interconexión de redes el internet es una herramienta:",
-    opciones: [
-      { textoRespuesta: "De interconexión de área extensa", isCorrect: false },
-      { textoRespuesta: "Compleja, intrincada e interdependiente", isCorrect: true },
-      { textoRespuesta: "De interconexión de área loca.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Indica qué es la longitud de Prefijos IP?",
-    opciones: [
-      { textoRespuesta: "Parte de red numérica de una dirección IP", isCorrect: false },
-      { textoRespuesta: "La cantidad de bits en la dirección que conforma la porción de red.", isCorrect: true },
-      { textoRespuesta: "Control de acceso a medios", isCorrect: false },
-      { textoRespuesta: "Dispositivo de red", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Cuáles son los elementos principales de un sistema de cableado estrucado?",
-    opciones: [
-      { textoRespuesta: "Distorsion", isCorrect: false },
-      { textoRespuesta: "Hardware y Software", isCorrect: false },
-      { textoRespuesta: "Cableado Horizontal y Vertical", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Seleccione lo correcto la norma EIA/TIa 568 A?",
-    opciones: [
-      { textoRespuesta: "Es un estándar de cableado en el cual se interconectan diferentes dispositivos para formar una red, orden en par trenzado.", isCorrect: true },
-      { textoRespuesta: "son cables coaxiales.", isCorrect: false },
-      { textoRespuesta: "ninguna de las anteriores.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Cuál es la Distancia que alcanza la fibra óptica monomodo 62?5/125 micras?",
-    opciones: [
-      { textoRespuesta: "300 mts", isCorrect: false },
-      { textoRespuesta: "menos de 300 mts", isCorrect: false },
-      { textoRespuesta: "3000 mts", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Si en un cableado horizontal no alcanza el cable para llegar su destino que se hace?",
-    opciones: [
-      { textoRespuesta: "Se coloca un repetidor.", isCorrect: false },
-      { textoRespuesta: "Se remplaza el cable por otro de la longitud correcta.", isCorrect: true },
-      { textoRespuesta: "Se conecta un switch y se coloca otro cable.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "A la Hora de establecer las rutas del cableado horizontal es importante evitar.",
-    opciones: [
-      { textoRespuesta: "motor con fuente de poder menor a 0.5 wats.", isCorrect: false },
-      { textoRespuesta: "cables de corriente alterna.", isCorrect: true },
-      { textoRespuesta: "Curvas de menos de 5 cm de radio", isCorrect: false },
-      { textoRespuesta: "Perdida de paquetes", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Todos los switches multicapa Catalyst admiten los siguientes tipos de interfaces de capa 3.",
-    opciones: [
-      { textoRespuesta: "Puerto enrutado e Interfaz virtual del switch (SVI).", isCorrect: true },
-      { textoRespuesta: "switches de alto rendimiento, switches Cisco Catalyst, puerto enrutado.", isCorrect: false },
-      { textoRespuesta: "Puerto enrutado, Interfaz virtual del switching.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La sentencia RETURN:",
-    opciones: [
-      { textoRespuesta: "Es una instrucción de control de flujo.", isCorrect: false },
-      { textoRespuesta: "Devuelve el control de ejecución a la función desde la que se la invocó", isCorrect: false },
-      { textoRespuesta: "Opcionalmente puede devolver un valor", isCorrect: false },
-      { textoRespuesta: "Todas las afirmaciones son correctas", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Las instrucciones escritas en un lenguaje natural al ser humano, generalmente en el idioma inglés, como, por ejemplo: if, for, while, entre otras. Corresponden al :",
-    opciones: [
-      { textoRespuesta: "Lenguaje de bajo nivel", isCorrect: false },
-      { textoRespuesta: "Lenguaje máquina", isCorrect: false },
-      { textoRespuesta: "Lenguaje de alto nivel", isCorrect: true },
-      { textoRespuesta: "Lenguaje intermedio", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Un depurador :",
-    opciones: [
-      { textoRespuesta: "Permite detectar y diagnosticar fallos en programas informáticos.", isCorrect: false },
-      { textoRespuesta: "Analizan el código fuente del programa y su interacción con el sistema operativo que lo ejecuta.", isCorrect: false },
-      { textoRespuesta: "Analizan el código del programa paso a paso mediante el uso de los breakpoints o puntos de interrupción", isCorrect: false },
-      { textoRespuesta: "Todas las afirmaciones son correctas", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Un token:",
-    opciones: [
-      { textoRespuesta: "Es un segmento código fuente del programa, que el compilador divide en elementos que los componen.", isCorrect: false },
-      { textoRespuesta: "Es una cadena de caracteres que tiene un significado coherente en cierto lenguaje de programación", isCorrect: true },
-      { textoRespuesta: "No es una constante, ni un identificador, ni un operador, ni un separador ni las palabras reservadas.", isCorrect: false },
-      { textoRespuesta: "Es un componente semántico", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Los mecanismos utilizados para transformar los datos del mismo tipo en otros datos nuevos, mediante la realización de operaciones, se denominan:",
-    opciones: [
-      { textoRespuesta: "Variables", isCorrect: false },
-      { textoRespuesta: "Tipos de datos", isCorrect: false },
-      { textoRespuesta: "Operadores", isCorrect: true },
-      { textoRespuesta: "Sentencias de control de flujo.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Las estructuras de control de flujo:",
-    opciones: [
-      { textoRespuesta: "Permiten modificar la sucesión lineal de instrucciones de un programa para que pueden tomar decisiones en función del valor de las variables.", isCorrect: true },
-      { textoRespuesta: "Permiten que Los programas que se pueden realizar utilizando solamente variables y operadores son una simple sucesión lineal de instrucciones básicas.", isCorrect: false },
-      { textoRespuesta: "Son estructuras que no influyen en la decisión de la que instrucción se ejecutará a continuación.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "El diseño web fijo:",
-    opciones: [
-      { textoRespuesta: "Utiliza unidades de medidas fijas, generalmente pixeles.", isCorrect: true },
-      { textoRespuesta: "Cambia según el tipo de dispositivo.", isCorrect: false },
-      { textoRespuesta: "Cumple las normas de un diseño web responsivo.", isCorrect: false },
-      { textoRespuesta: "Utiliza unidades de medidas fijas, generalmente pixeles.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La técnica de programación que se basa en la secuencia, iteración y selección se denomina:",
-    opciones: [
-      { textoRespuesta: "Programación lineal", isCorrect: false },
-      { textoRespuesta: "Programación estructurada", isCorrect: true },
-      { textoRespuesta: "Programación orientada a objetos", isCorrect: false },
-      { textoRespuesta: "Programación en capas", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "En programación orientada a objetos, en el caso” impresora usa papel”, que tipo de relación existe entre los objetos impresora y papel:",
-    opciones: [
-      { textoRespuesta: "Asociación", isCorrect: false },
-      { textoRespuesta: "Herencia", isCorrect: false },
-      { textoRespuesta: "Composición", isCorrect: false },
-      { textoRespuesta: "Dependencia", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "A la capacidad que tienen los objetos de comportarse de múltiples formas sin olvidar su esencia, se denomina:",
-    opciones: [
-      { textoRespuesta: "Abstracción", isCorrect: false },
-      { textoRespuesta: "Encapsulamiento", isCorrect: false },
-      { textoRespuesta: "Polimorfismo", isCorrect: true },
-      { textoRespuesta: "Herencia", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "¿Con qué propiedad se define el espacio entre el borde de un elemento HTML y los elementos que lo rodean?",
-    opciones: [
-      { textoRespuesta: "border", isCorrect: false },
-      { textoRespuesta: "margin", isCorrect: true },
-      { textoRespuesta: "padding", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La característica común que comparten todas las aplicaciones web, es:",
-    opciones: [
-      { textoRespuesta: "Utilizar el lenguaje de programación HTML, tanto para la creación de sitios estáticos como dinámicos.", isCorrect: false },
-      { textoRespuesta: "Centralizar el software para facilitar las tareas de mantenimiento y actualización de grandes sistemas.", isCorrect: true },
-      { textoRespuesta: "Utilizar las hojas de estilo CSS, para definir la estructura y contenido del sitio.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Las etiquetas semánticas en HTML:",
-    opciones: [
-      { textoRespuesta: "Definen el aspecto, la apariencia e incluso la posición dentro de la web", isCorrect: false },
-      { textoRespuesta: "Definen la estructura del documento y permiten que las páginas web sean mejor indexadas por los buscadores.", isCorrect: true },
-      { textoRespuesta: "Empiezan en una nueva línea y ocupan todo el espacio disponible hasta el final de la línea.", isCorrect: false },
-      { textoRespuesta: "Sólo ocupan el espacio necesario para mostrar sus contenidos.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "El tipo de dato:",
-    opciones: [
-      { textoRespuesta: "Determina la naturaleza del conjunto de valores que un dato puede tomar una variable.", isCorrect: false },
-      { textoRespuesta: "Pueden ser numéricos, cadena de caracteres.", isCorrect: false },
-      { textoRespuesta: "Pueden ser valores lógicos.", isCorrect: false },
-      { textoRespuesta: "Todas las anteriores respuestas son correctas.", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "El código se define como:",
-    opciones: [
-      { textoRespuesta: "Un conjunto de reglas e instrucciones escritas en un lenguaje de programación específico que permite la comunicación con las máquinas.", isCorrect: true },
-      { textoRespuesta: "Un conjunto de navegadores escritos en un lenguaje de programación específico que es útil para comunicarse con las máquinas.", isCorrect: false },
-      { textoRespuesta: "Un conjunto de textos, imágenes, vídeos y espacios que se pueden mostrar en páginas web.", isCorrect: false },
-      { textoRespuesta: "Un conjunto de páginas web que contienen textos, imágenes, vídeos y espacios que son útiles para comunicarse con las máquinas", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "En programación orientada a objetos para que sirven los getters (get) y setters (set)",
-    opciones: [
-      { textoRespuesta: "Determinan la visibilidad de la variable o atributo dentro de la estructura del programa", isCorrect: false },
-      { textoRespuesta: "Sirven para mostrar (get) y modificar (set) el valor de las variables privadas", isCorrect: true },
-      { textoRespuesta: "Son métodos que determinan el nivel de encapsulamiento de una variable o atributo", isCorrect: false },
-      { textoRespuesta: "Son procedimientos utilizados para reusar código", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La opción más recomendable para declarar los estilos en CSS es:",
-    opciones: [
-      { textoRespuesta: "Enlazarlo a otro archivo de texto con extensión css.", isCorrect: true },
-      { textoRespuesta: "Realizarlo en la cabecera de la página de manera interna", isCorrect: false },
-      { textoRespuesta: "Realizarlo en la etiqueta especifica de HTML", isCorrect: false },
-      { textoRespuesta: "Todas las opciones son correctas", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Un servidor Web es:",
-    opciones: [
-      { textoRespuesta: "Aquel que proporciona interoperabilidad manejando bases de datos flexibles y de alto rendimiento.	 Un programa codificado en un lenguaje soportado por un navegador que permite acceder al servidor en cualquier momento sin requerir una instalación.", isCorrect: false },
-      { textoRespuesta: "El encargado de procesar un programa del lado del servidor, permitiendo el intercambio de información entre servidor y el cliente", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Seleccione una ventaja del uso de frameworks en el desarrollo de aplicaciones Web",
-    opciones: [
-      { textoRespuesta: "Añade código incensario a las aplicaciones", isCorrect: false },
-      { textoRespuesta: "Agilita el desarrollo de los proyectos, mediante diseño y programación estándar", isCorrect: true },
-      { textoRespuesta: "Las versiones pueden ser inestables", isCorrect: false },
-      { textoRespuesta: "El tiempo de aprendizaje puede ser extensos si no tenemos nociones del lenguaje de programación a utilizar.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Cuáles de las siguientes tecnologías son SGBD no relacionales:",
-    opciones: [
-      { textoRespuesta: "SQL SERVER Y ORACLE", isCorrect: false },
-      { textoRespuesta: "MONGODB Y MARIADB", isCorrect: false },
-      { textoRespuesta: "POSTGRESQL Y CASSANDRA", isCorrect: false },
-      { textoRespuesta: "=COUCHBASE Y MONGO DB", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "¿Qué define la estructura de las expresiones de un lenguaje de programación?",
-    opciones: [
-      { textoRespuesta: "Sus palabras reservadas", isCorrect: false },
-      { textoRespuesta: "Sus reglas sintácticas", isCorrect: false },
-      { textoRespuesta: "Sus reglas semánticas", isCorrect: true },
-      { textoRespuesta: "Ninguna de las afirmaciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La estructura de datos que añade un elemento al final de la estructura y elimina el primer elemento de la estructura, se denomina: {",
-    opciones: [
-      { textoRespuesta: "Lista", isCorrect: false },
-      { textoRespuesta: "Matriz", isCorrect: false },
-      { textoRespuesta: "Pila", isCorrect: false },
-      { textoRespuesta: "=Cola", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Cuando se ejecuta el método constructor de una clase:",
-    opciones: [
-      { textoRespuesta: "Se crea un alias y se inicializan los atributos del objeto", isCorrect: false },
-      { textoRespuesta: "Se asigna un espacio de memoria al objeto instanciado y se inicializan los atributos del objeto", isCorrect: true },
-      { textoRespuesta: "Se asigna un espacio de memoria al objeto instanciado, pero no se inicializan los atributos del objeto", isCorrect: false },
-      { textoRespuesta: "Ninguna de las afirmaciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Una variable:",
-    opciones: [
-      { textoRespuesta: "Es un espacio de almacenamiento en la memoria RAM, que sirve para que la computadora guarda temporalmente los datos con los que trabaja un algoritmo", isCorrect: false },
-      { textoRespuesta: "Pueden cambiar su valor mientras se ejecuta el algoritmo", isCorrect: false },
-      { textoRespuesta: "Utilizan un nombre o identificador y un tipo de dato.", isCorrect: false },
-      { textoRespuesta: "Todas las opciones son correctas", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "La sobrecarga de métodos en programación orientada a objetos, se refiere:",
-    opciones: [
-      { textoRespuesta: "Múltiples métodos dentro de una clase los cuales contienen el mismo nombre, diferentes parámetros, pero la misma funcionalidad.", isCorrect: false },
-      { textoRespuesta: "Múltiples métodos dentro de una clase los cuales contienen el mismo nombre, diferentes parámetros y diferentes funcionalidades.", isCorrect: true },
-      { textoRespuesta: "Múltiples métodos dentro de una clase los cuales contienen el mismo nombre, mismos parámetros y la misma funcionalidad.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Al conjunto de protocolos y estándares que sirven para intercambiar datos entre aplicaciones, se conoce como:",
-    opciones: [
-      { textoRespuesta: "Servidor web", isCorrect: true },
-      { textoRespuesta: "Servidor de aplicaciones", isCorrect: false },
-      { textoRespuesta: "Servicio web", isCorrect: false },
-      { textoRespuesta: "Aplicación web", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Un ataque CSRF es:",
-    opciones: [
-      { textoRespuesta: "La inyección de <scripts> maliciosos por parte del usuario, que se ejecutaran al momento de cargar este contenido en la página web.", isCorrect: true },
-      { textoRespuesta: "Consisten en forzar a un usuario a ejecutar peticiones no deseadas a una web en la que están autentificados sin que este se dé cuenta.", isCorrect: false },
-      { textoRespuesta: "La ejecución de códigos que permiten acceder al sitio e implantar un malware, que facilitará la ejecución de código de manera remota", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La estructura básica de una página HTML es:",
-    opciones: [
-      { textoRespuesta: "<HTML>, <HEADER>, <BODY>, </BODY>, </HTML>.", isCorrect: false },
-      { textoRespuesta: "<HTML>, <HEADER>, <BODY>, </HEADER>, </BODY>.", isCorrect: false },
-      { textoRespuesta: "<HTML>, <HEADER>, </HEADER>. <BODY>, </BODY>, </HTML>.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones anteriores es correcta.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Una excepción es la indicación de que se produjo un error en el programa y se producen cuando:",
-    opciones: [
-      { textoRespuesta: "Se diseña el programa.", isCorrect: false },
-      { textoRespuesta: "Se compila el programa.", isCorrect: false },
-      { textoRespuesta: "Se ejecuta el programa.", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones anteriores es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Al conjunto de instrucciones que se encuentra dentro de una clase, que pueden o no devolver un valor y pueden recibir parámetros de entrada, parámetros de salida y/o parámetros de referencia.",
-    opciones: [
-      { textoRespuesta: "Atributo", isCorrect: false },
-      { textoRespuesta: "Método", isCorrect: true },
-      { textoRespuesta: "Objeto", isCorrect: false },
-      { textoRespuesta: "Interfaz", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "En el desarrollo de aplicaciones web, la programación en el cliente:",
-    opciones: [
-      { textoRespuesta: "Consiste en crear esbozos de la web final", isCorrect: false },
-      { textoRespuesta: "Consiste en crear la lógica de la aplicación web", isCorrect: false },
-      { textoRespuesta: "Consiste en el desarrollo de la interfaz de usuario de la aplicación web, utilizando el estándar de desarrollo HTML, CSS y JAVASCRIPTS", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Boostrap:",
-    opciones: [
-      { textoRespuesta: "Es una herramienta de tecnología de frontend que no favorece el diseño responsive", isCorrect: false },
-      { textoRespuesta: "Dificulta el desarrollo de aplicaciones web", isCorrect: false },
-      { textoRespuesta: "Es un framework de CSS Open Source", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "En el desarrollo de aplicaciones web, la programación en el servidor:",
-    opciones: [
-      { textoRespuesta: "Consiste en el desarrollo de la interfaz de usuario de la aplicación web", isCorrect: false },
-      { textoRespuesta: "Consiste en crear esbozos de la web final", isCorrect: false },
-      { textoRespuesta: "Consiste en desarrollar la lógica de la aplicación, para lo cual se utilizan lenguajes de programación como PHP, ASP NET, Python, Perl, etc.", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Seleccione lo correcto:",
-    opciones: [
-      { textoRespuesta: "HTML es un lenguaje de programación, pese a que no posee funciones aritméticas, estructuras de control o las variables.", isCorrect: false },
-      { textoRespuesta: "HTML, CSS no son lenguajes de programación, son lenguajes que se utilizan para desarrollar la lógica de la aplicación del lado del servidor", isCorrect: false },
-      { textoRespuesta: "HTML, CSS no son lenguajes de programación, son lenguajes que se utilizan para la presentación de la aplicación del lado del cliente.", isCorrect: true },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La programación se puede definir como:",
-    opciones: [
-      { textoRespuesta: "El proceso de diseñar, codificar, depurar y mantener el código fuente de programas de ordenador", isCorrect: true },
-      { textoRespuesta: "La ejecución de programas de ordenador desde la línea de comandos", isCorrect: false },
-      { textoRespuesta: "La instalación de programas en sistemas operativos desde la línea de comandos", isCorrect: false },
-      { textoRespuesta: "Ninguna de las anteriores respuestas es correcta.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Una arquitectura multicapa es:",
-    opciones: [
-      { textoRespuesta: "Es un modelo  que se utiliza para la representación de diagramas de uso.", isCorrect: false },
-      { textoRespuesta: "Un estilo de programación donde el objetivo principal es separar los diferentes aspectos del desarrollo, tales como la lógica de negocio, mecanismos de almacenamiento de datos, aspectos de presentación, etc.", isCorrect: true },
-      { textoRespuesta: "Es un modelo de programación donde no se establecen responsabilidades de manera clara.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las anteriores.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "La regla \"div + span \{ color: red \}\" significa que ...",
-    opciones: [
-      { textoRespuesta: "Se aplicará a las etiquetas <span> que sean un \"hermano\" de <div>.", isCorrect: false },
-      { textoRespuesta: "Se aplicará a las etiquetas <span> que sean un \"hermano contiguo\" de <div>.", isCorrect: true },
-      { textoRespuesta: "Se aplicará a las etiquetas <span> que sean un \"descendiente\" de <div>.", isCorrect: false },
-      { textoRespuesta: "Ninguna de las opciones es correcta", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Las páginas web que utilizan bases de datos y su contenido cambian según la interacción con el usuario, se denominan:",
-    opciones: [
-      { textoRespuesta: "Dinámicas", isCorrect: false },
-      { textoRespuesta: "Gestor de contenido", isCorrect: false },
-      { textoRespuesta: "E-Comerce", isCorrect: false },
-      { textoRespuesta: "Dinámicas", isCorrect: true }
-    ]
-  },
-  {
-    titulo: "Seleccione lo correcto. Los algoritmos:",
-    opciones: [
-      { textoRespuesta: "Dependen del lenguaje de programación específico.", isCorrect: false },
-      { textoRespuesta: "Son la interfaz con la que el usuario debe interactuar para ejecutar un proceso", isCorrect: false },
-      { textoRespuesta: "Resuelven paso a paso un problema utilizando una entrada de datos, que es procesada para generar una salida", isCorrect: true },
-      { textoRespuesta: "Grupo de ordenes discontinuas, que presentan la solución a un problema.", isCorrect: false }
-    ]
-  },
-  {
-    titulo: "Un lenguaje de programación:",
-    opciones: [
-      { textoRespuesta: "Es un sistema estructurado de comunicación, para describir el conjunto de acciones consecutivas que un computador debe ejecutar.", isCorrect: false },
-      { textoRespuesta: "Es un conjunto de símbolos y reglas sintácticas y semánticas que definen su estructura y el significado de sus elementos y expresiones.", isCorrect: false },
-      { textoRespuesta: "Comprende un lenguaje formal, diseñado para organizar algoritmos y procesos lógicos que serán ejecutados por un computador.", isCorrect: false },
-      { textoRespuesta: "Todas las afirmaciones son correctas", isCorrect: true }
-    ]
-  }
+    {
+        titulo: "Durante una auditoría de seguridad de TI, se descubre que varios empleados han estado compartiendo sus contraseñas con compañeros de trabajo. ¿Cuál de las siguientes es la acción más apropiada que debe tomar el auditor?",
+        opciones: [
+            { textoRespuesta: "Ignorar el hallazgo, ya que compartir contraseñas es una práctica común en la organización", isCorrect: false },
+            { textoRespuesta: "Recomendar la implementación inmediata de un sistema de autenticación biométrica", isCorrect: false },
+            { textoRespuesta: "Notificar a la gerencia sobre el incumplimiento de las políticas de seguridad y sugerir capacitación en concientización", isCorrect: true },
+            { textoRespuesta: "Revocar los accesos de todos los empleados involucrados y exigir un cambio de contraseña", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Al revisar los registros de acceso a una base de datos crítica, se observa que un usuario administrativo ha estado accediendo a la base de datos fuera del horario laboral normal. ¿Qué enfoque debe adoptar el auditor para investigar más a fondo esta situación?",
+        opciones: [
+            { textoRespuesta: "Asumir que el acceso fuera de horario es justificado y no realizar más investigaciones", isCorrect: false },
+            { textoRespuesta: "Entrevistar al usuario administrativo para obtener una explicación de los accesos inusuales", isCorrect: true },
+            { textoRespuesta: "Recomendar la suspensión inmediata de los privilegios de acceso del usuario administrativo", isCorrect: false },
+            { textoRespuesta: "Notificar a las autoridades legales sobre una posible actividad maliciosa", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Durante una auditoría de cumplimiento, se identifica que la organización no ha realizado evaluaciones de riesgo de seguridad de la información en los últimos dos años. ¿Cuál de las siguientes recomendaciones es la más adecuada para abordar esta deficiencia?",
+        opciones: [
+            { textoRespuesta: "Sugerir que la organización posponga las evaluaciones de riesgo hasta el próximo ciclo de auditoría", isCorrect: false },
+            { textoRespuesta: "Recomendar la contratación de un consultor externo para realizar evaluaciones de riesgo inmediatas", isCorrect: false },
+            { textoRespuesta: "Aconsejar a la organización que establezca un proceso regular de evaluación de riesgos y lo documento en sus políticas", isCorrect: true },
+            { textoRespuesta: "Indicar que las evaluaciones de riesgo son opcionales y no afectan el cumplimiento normativo", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Al examinar la política de gestión de incidentes de seguridad de la información de una organización, se observa que no se han definido claramente los roles y responsabilidades del personal clave. ¿Qué recomendación debe hacer el auditor para mejorar la política?",
+        opciones: [
+            { textoRespuesta: "Sugerir la eliminación de la política de gestión de incidentes y confiar en la experiencia del personal", isCorrect: false },
+            { textoRespuesta: "Recomendar la asignación inmediata de roles y responsabilidades al personal sin una revisión adicional", isCorrect: false },
+            { textoRespuesta: "Aconsejar a la organización que revise y actualice la política, definiendo claramente los roles y responsabilidades", isCorrect: true },
+            { textoRespuesta: "Indicar que la falta de claridad en los roles y responsabilidades no tiene un impacto significativo en la gestión de incidentes", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Durante una prueba de penetración como parte de una auditoría de seguridad, se descubre una vulnerabilidad crítica en el servidor web de la organización. ¿Cuál es el curso de acción más apropiado que debe seguir el auditor?",
+        opciones: [
+            { textoRespuesta: "Explotar la vulnerabilidad para demostrar su impacto y luego notificar a la organización", isCorrect: false },
+            { textoRespuesta: "Ignorar la vulnerabilidad, ya que los servidores web suelen tener vulnerabilidades conocidas", isCorrect: false },
+            { textoRespuesta: "Notificar inmediatamente a la organización sobre la vulnerabilidad y proporcionar recomendaciones para su corrección", isCorrect: true },
+            { textoRespuesta: "Publicar los detalles de la vulnerabilidad en foros de seguridad en línea para obtener opiniones adicionales", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Al revisar los registros de acceso físico al centro de datos, se observa que un ex empleado ha ingresado a las instalaciones después de la terminación de su empleo. ¿Qué acción debe tomar el auditor en respuesta a este hallazgo?",
+        opciones: [
+            { textoRespuesta: "No hacer nada, ya que el ex empleado probablemente tenía una razón válida para ingresar", isCorrect: false },
+            { textoRespuesta: "Notificar a la gerencia sobre el incidente y recomendar una revisión inmediata de los procedimientos de control de acceso físico", isCorrect: true },
+            { textoRespuesta: "Contactar al ex empleado directamente para obtener una explicación de su visita al centro de datos", isCorrect: false },
+            { textoRespuesta: "Eliminar todos los registros de acceso del ex empleado para evitar confusiones futuras", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Durante una auditoría de la gestión de cambios de TI, se identifica que no se siguen consistentemente los procedimientos establecidos para la aprobación y documentación de cambios. ¿Cuál de las siguientes recomendaciones es la más adecuada para abordar esta deficiencia?",
+        opciones: [
+            { textoRespuesta: "Sugerir que la organización abandone por completo los procedimientos de gestión de cambios", isCorrect: false },
+            { textoRespuesta: "Recomendar que se hagan excepciones a los procedimientos de gestión de cambios en casos de emergencia", isCorrect: false },
+            { textoRespuesta: "Aconsejar a la organización que refuerce la adherencia a los procedimientos existentes y proporcione capacitación al personal relevante", isCorrect: true },
+            { textoRespuesta: "Indicar que la falta de consistencia en los procedimientos de gestión de cambios es aceptable siempre que los cambios sean exitosos", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Al evaluar los controles de seguridad de la red, se descubre que varios dispositivos de red críticos tienen configuraciones predeterminadas de fábrica y contraseñas débiles. ¿Qué enfoque debe adoptar el auditor para abordar esta situación?",
+        opciones: [
+            { textoRespuesta: "No informar sobre los dispositivos con configuraciones predeterminadas, ya que es una práctica común en muchas organizaciones", isCorrect: false },
+            { textoRespuesta: "Recomendar la desconexión inmediata de todos los dispositivos de red afectados hasta que se corrijan las configuraciones", isCorrect: false },
+            { textoRespuesta: "Notificar a la gerencia sobre los riesgos asociados y sugerir un plan de acción para asegurar adecuadamente los dispositivos de red", isCorrect: true },
+            { textoRespuesta: "Intentar adivinar las contraseñas débiles para demostrar la gravedad del problema", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Durante una revisión de la política de clasificación de datos, se observa que no se han definido claramente los criterios para determinar la criticidad de los activos de información. ¿Qué recomendación debe hacer el auditor para mejorar la política?",
+        opciones: [
+            { textoRespuesta: "Sugerir que la organización elimine por completo la política de clasificación de datos", isCorrect: false },
+            { textoRespuesta: "Recomendar que se asigne arbitrariamente la clasificación de datos a los activos de información", isCorrect: false },
+            { textoRespuesta: "Aconsejar a la organización que establezca criterios claros y documentados para la clasificación de datos basados en su sensibilidad y criticidad", isCorrect: true },
+            { textoRespuesta: "Indicar que la falta de criterios de clasificación claros no tiene un impacto significativo en la seguridad de la información", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Al realizar una auditoría de cumplimiento de la normativa de protección de datos, se identifica que la organización no ha designado formalmente a un responsable de la protección de datos (DPO). ¿Cuál de las siguientes acciones es la más apropiada para abordar esta deficiencia?",
+        opciones: [
+            { textoRespuesta: "Ignorar la falta de un DPO designado, ya que muchas organizaciones operan sin uno", isCorrect: false },
+            { textoRespuesta: "Recomendar que se designe inmediatamente a un empleado existente como DPO sin considerar sus calificaciones", isCorrect: false },
+            { textoRespuesta: "Aconsejar a la organización que evalúe la necesidad de un DPO y designe formalmente a una persona calificada para el rol", isCorrect: true },
+            { textoRespuesta: "Sugerir que la organización externalice por completo la función de protecciónde datos a un tercero", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Se dispone de una mochila que soporta un peso máximo de 15 Kg y de 3 objetos: A, B y C. El objeto A con un peso de 5 Kg y da una ganancia de 4 dólares, el objeto B con un peso de 10 Kg y da una ganancia de 5 dólares, el objeto C con un peso de 5 Kg y da una ganancia de 3 dólares. Indicar los objetos que se deben colocar en la mochila para obtener la máxima ganancia, aplicando el método de búsqueda informada vuelta atrás:",
+        opciones: [
+            { textoRespuesta: "{A, B, C}", isCorrect: false },
+            { textoRespuesta: "{B, C}", isCorrect: true },
+            { textoRespuesta: "{A, B}", isCorrect: false },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Se dispone de una mochila que soporta un peso máximo de 10 Kg y de 3 objetos: A, B y C. El objeto A con un peso de 3 Kg y da una ganancia de 10 dólares, el objeto B con un peso de 4 Kg y da una ganancia de 5 dólares, el objeto C con un peso de 6 Kg y da una ganancia de 15 dólares. Indicar los objetos que se deben colocar en la mochila para obtener la máxima ganancia, aplicando el método de búsqueda informada vuelta atrás:",
+        opciones: [
+            { textoRespuesta: "{A, C}", isCorrect: true },
+            { textoRespuesta: "{B, C}", isCorrect: false },
+            { textoRespuesta: "{A, B, C}", isCorrect: false },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Aplicando el método de búsqueda no informada en amplitud, indique las operaciones que permitan la solución del puzzle, partiendo del estado origen 3142 al estado final 4312 y considerando que sólo se pueden hacer operaciones con las piezas que están continuas, por lo que existirán las operaciones: izquierda (hacia la izquierda del nodo), Centro (hacia el centro del nodo) y Derecha (hacia la derecha del nodo):",
+        opciones: [
+            { textoRespuesta: "Derecha - Centro - Derecha - Centro.", isCorrect: false },
+            { textoRespuesta: "Izquierda - Centro - Izquierda - Centro.", isCorrect: false },
+            { textoRespuesta: "Centro - Izquierda.", isCorrect: true },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Aplicando el método de búsqueda no informada en profundidad, indique las operaciones que permitan la solución del puzzle, partiendo del estado origen 231 al estado final 123 y considerando que sólo se pueden hacer operaciones con las piezas que están continuas, por lo que existirán las operaciones: Izquierda (hacia la izquierda del nodo) y Derecha (hacia la derecha del nodo):",
+        opciones: [
+            { textoRespuesta: "Derecha – Izquierda - Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Izquierda - Derecha - Izquierda - Derecha.", isCorrect: true },
+            { textoRespuesta: "Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Aplicando el método de búsqueda no informada en amplitud, indique las operaciones que permitan la solución del puzzle, partiendo del estado origen 213 al estado final 321 y considerando que sólo se pueden hacer operaciones con las piezas que están continuas, por lo que existirán las operaciones: Izquierda (hacia la izquierda del nodo), Centro (hacia el centro del nodo) y Derecha (h hacia la derecha del nodo):",
+        opciones: [
+            { textoRespuesta: "Izquierda - Derecha - Izquierda - Derecha.", isCorrect: false },
+            { textoRespuesta: "Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Derecha - Izquierda - Derecha - Izquierda.", isCorrect: true },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Aplicando el método de búsqueda no informada en amplitud, indique las operaciones que permitan la solución del puzzle, partiendo del estado origen 132 al estado final 231 y considerando que sólo se pueden hacer operaciones con las piezas que están continuas, por lo que existirán las operaciones: Izquierda (hacia la izquierda del nodo) y Derecha (hacia la derecha del nodo):",
+        opciones: [
+            { textoRespuesta: "Izquierda - Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Izquierda - Derecha.", isCorrect: true },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Aplicando el método de búsqueda no informada en profundidad, indique las operaciones que permitan la solución del puzzle, partiendo del estado origen 2413 al estado final 2134 y considerando que sólo se pueden hacer operaciones con las piezas que están continuas, por lo que existirán las operaciones: Izquierda (hacia la izquierda del nodo), Centro (hacia el centro del nodo) y Derecha (hacia la derecha del nodo):",
+        opciones: [
+            { textoRespuesta: "Izquierda - Centro - Izquierda - Centro - Izquierda - Derecha.", isCorrect: false },
+            { textoRespuesta: "Centro - Derecha.", isCorrect: true },
+            { textoRespuesta: "Derecha - Izquierda.", isCorrect: false },
+            { textoRespuesta: "Ninguna es correcta.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es el comando para actualizar la columna 'salario' a 5000 para el empleado con ID 3 en la tabla 'empleados'?",
+        opciones: [
+            { textoRespuesta: "UPDATE empleados SET salario=5000 WHERE ID=3;", isCorrect: true },
+            { textoRespuesta: "MODIFY empleados SET salario=5000 WHERE ID=3;", isCorrect: false },
+            { textoRespuesta: "CHANGE empleados SET salario=5000 WHERE ID=3;", isCorrect: false },
+            { textoRespuesta: "REPLACE empleados SET salario=5000 WHERE ID=3;", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cómo se elimina el registro del estudiante con ID 5 de la tabla 'estudiantes'?",
+        opciones: [
+            { textoRespuesta: "DELETE FROM estudiantes WHERE ID=5;", isCorrect: true },
+            { textoRespuesta: "REMOVE FROM estudiantes WHERE ID=5;", isCorrect: false },
+            { textoRespuesta: "UPDATE estudiantes DELETE WHERE ID=5;", isCorrect: false },
+            { textoRespuesta: "ERASE FROM estudiantes WHERE ID=5;", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cómo se pueden recuperar los datos ordenados por la columna Apellidos?",
+        opciones: [
+            { textoRespuesta: "Instrucción CREATE VIEW con una cláusula ORDER BY", isCorrect: false },
+            { textoRespuesta: "Instrucción SELECT con una cláusula GROUP BY", isCorrect: false },
+            { textoRespuesta: "Instrucción SELECT con una cláusula ORDER BY", isCorrect: true },
+            { textoRespuesta: "Instrucción CREATE VIEW que incluya la función GETDATE", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué definición de columna crea con éxito una columna?",
+        opciones: [
+            { textoRespuesta: "Presupuesto money CHECK(Presupuesto BETWEEN 100 AND 500)", isCorrect: true },
+            { textoRespuesta: "Presupuesto money > 100", isCorrect: false },
+            { textoRespuesta: "Presupuesto money(5,2) DEFAULT 200", isCorrect: false },
+            { textoRespuesta: "Presupuesto money CHECK(BETWEEN 100 AND 500)", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Se dispone de una tabla Producto vacía que se ha creado con la siguiente instrucción: CREATE TABLE Producto( ProdiD int PRIMARY KEY, CategoriaID int NOT NULL, Descripcion varchar(35), Cantidad int CHECK(Cantidad> 0 AND Cantidad <=50)) ¿Qué instrucción agrega con éxito datos en Producto?",
+        opciones: [
+            { textoRespuesta: "INSERT INTO Producto(Descripcion, Cantidad) VALUES('caramelos', 15)", isCorrect: false },
+            { textoRespuesta: "INSERT INTO Producto VALUES(101,NULL, 'caramelos', 25)", isCorrect: false },
+            { textoRespuesta: "INSERT INTO Producto (ProdiD, CategoriaID, Descripcion, Cantidad) VALUES (101, 2, 'Oval Wall Mirror',65)", isCorrect: false },
+            { textoRespuesta: "INSERT INTO Producto VALUES(101, 1, 'caramelos', 25)", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Cuál es el comando SQL para actualizar el campo 'telefono' de la tabla 'clientes' donde el campo 'id' sea igual a 1?",
+        opciones: [
+            { textoRespuesta: "UPDATE clientes SET telefono = '555-1234' WHERE id = 1", isCorrect: true },
+            { textoRespuesta: "UPDATE clientes WHERE id = 1 SET telefono = '555-1234'", isCorrect: false },
+            { textoRespuesta: "UPDATE telefono FROM clientes WHERE id = 1", isCorrect: false },
+            { textoRespuesta: "UPDATE clientes SET telefono = '555-1234'", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cómo podrías buscar todos los productos en una tabla productos cuyo nombre tenga exactamente cinco letras?",
+        opciones: [
+            { textoRespuesta: "SELECT nombre FROM productos WHERE nombre LIKE '%%%%%';", isCorrect: false },
+            { textoRespuesta: "SELECT nombre FROM productos WHERE nombre LIKE '_ _ _ _ _';", isCorrect: true },
+            { textoRespuesta: "SELECT nombre FROM productos WHERE nombre LIKE '_ _ _ _';", isCorrect: false },
+            { textoRespuesta: "SELECT nombre FROM productos WHERE nombre LIKE '%';", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué sentencia SQL usarías para cambiar el nombre de un producto y aumentar su precio al mismo tiempo?",
+        opciones: [
+            { textoRespuesta: "UPDATE productos SET nombre = 'NuevoNombre', precio = precio + 10 WHERE id = 1;", isCorrect: true },
+            { textoRespuesta: "UPDATE productos SET nombre = 'NuevoNombre', precio = precio - 10 WHERE id = 1;", isCorrect: false },
+            { textoRespuesta: "UPDATE productos SET 'NuevoNombre', precio + 10 WHERE id = 1;", isCorrect: false },
+            { textoRespuesta: "UPDATE productos SET nombre = 'NuevoNombre' AND precio = precio + 10 WHERE id = 1;", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cómo encontrarías los códigos de producto que comienzan con dos caracteres cualesquiera seguidos de '99' y luego cualquier cantidad de caracteres?",
+        opciones: [
+            { textoRespuesta: "SELECT codigo FROM productos WHERE codigo LIKE '99%';", isCorrect: false },
+            { textoRespuesta: "SELECT codigo FROM productos WHERE codigo LIKE '_99%';", isCorrect: false },
+            { textoRespuesta: "SELECT codigo FROM productos WHERE codigo LIKE '%99%';", isCorrect: false },
+            { textoRespuesta: "SELECT codigo FROM productos WHERE codigo LIKE '_ _99%';", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Cómo podrías insertar múltiples registros en la tabla productos en una sola sentencia?",
+        opciones: [
+            { textoRespuesta: "INSERT INTO productos (nombre, precio) VALUES ('Producto1', 10), ('Producto2', 20);", isCorrect: true },
+            { textoRespuesta: "INSERT INTO productos (nombre, precio) MULTIPLE ('Producto1', 10), ('Producto2', 20);", isCorrect: false },
+            { textoRespuesta: "INSERT INTO productos SET nombre = 'Producto1', precio = 10;", isCorrect: false },
+            { textoRespuesta: "UPDATE productos SET nombre = 'Producto1', precio = 10;", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es el propósito principal de un IDE?",
+        opciones: [
+            { textoRespuesta: "Compilar código", isCorrect: false },
+            { textoRespuesta: "Ejecutar código", isCorrect: false },
+            { textoRespuesta: "Depurar código", isCorrect: false },
+            { textoRespuesta: "Facilitar el desarrollo de software", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Qué se entiende por recursividad en programación?",
+        opciones: [
+            { textoRespuesta: "Un bucle que se repite infinitamente", isCorrect: false },
+            { textoRespuesta: "Una función que se llama a sí misma", isCorrect: true },
+            { textoRespuesta: "La capacidad de un lenguaje para interpretar código", isCorrect: false },
+            { textoRespuesta: "Un tipo de estructura de datos", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué función cumplen los compiladores en el proceso de desarrollo de software?",
+        opciones: [
+            { textoRespuesta: "Ejecutar código fuente línea por línea", isCorrect: false },
+            { textoRespuesta: "Traducir código fuente a código máquina", isCorrect: true },
+            { textoRespuesta: "Depurar errores en el código", isCorrect: false },
+            { textoRespuesta: "Interpretar código para su ejecución", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es la principal diferencia entre un compilador y un intérprete?",
+        opciones: [
+            { textoRespuesta: "El compilador ejecuta el código directamente, mientras que el intérprete lo traduce línea por línea", isCorrect: false },
+            { textoRespuesta: "El compilador es más rápido que el intérprete", isCorrect: false },
+            { textoRespuesta: "El intérprete es más fácil de depurar que el compilador", isCorrect: false },
+            { textoRespuesta: "No hay diferencia, ambos realizan las mismas tareas", isCorrect: false },
+            { textoRespuesta: "El compilador traduce todo el código antes de ejecutarlo, mientras que el intérprete traduce y ejecuta línea por línea", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Qué es un thread en programación?",
+        opciones: [
+            { textoRespuesta: "Un tipo de error en el código el cual se puede manejar a través de try catch", isCorrect: false },
+            { textoRespuesta: "Una función recursiva que se llama a sí mismo", isCorrect: false },
+            { textoRespuesta: "Una secuencia de instrucciones que se ejecutan de forma independiente", isCorrect: true },
+            { textoRespuesta: "Un tipo de estructura de datos que sirve para manipular colecciones", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es el proceso principal de manejo de excepciones en Java?",
+        opciones: [
+            { textoRespuesta: "Creación de excepciones y errores", isCorrect: false },
+            { textoRespuesta: "Lanzamiento de excepciones y errores", isCorrect: false },
+            { textoRespuesta: "Captura de excepciones", isCorrect: true },
+            { textoRespuesta: "Sincronización de excepciones", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué tecnología se utiliza comúnmente para conectarse a una base de datos desde una aplicación Java?",
+        opciones: [
+            { textoRespuesta: "Sockets", isCorrect: false },
+            { textoRespuesta: "JDBC", isCorrect: true },
+            { textoRespuesta: "HTML", isCorrect: false },
+            { textoRespuesta: "CSS", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué estructura de datos sigue el principio LIFO (Last In, First Out)?",
+        opciones: [
+            { textoRespuesta: "Pila", isCorrect: true },
+            { textoRespuesta: "Cola", isCorrect: false },
+            { textoRespuesta: "Lista enlazada", isCorrect: false },
+            { textoRespuesta: "Árbol binario", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál de las siguientes estructuras de datos utiliza el principio FIFO (First In, First Out)?",
+        opciones: [
+            { textoRespuesta: "Pila", isCorrect: false },
+            { textoRespuesta: "Cola", isCorrect: true },
+            { textoRespuesta: "Lista enlazada", isCorrect: false },
+            { textoRespuesta: "Árbol binario", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué método se utiliza para agregar un elemento al final de una cola en C#?",
+        opciones: [
+            { textoRespuesta: "Push()", isCorrect: false },
+            { textoRespuesta: "Pop()", isCorrect: false },
+            { textoRespuesta: "Enqueue()", isCorrect: true },
+            { textoRespuesta: "Dequeue()", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué operación en una cola de prioridad en C# devuelve el elemento con la mayor prioridad sin eliminarlo de la cola?",
+        opciones: [
+            { textoRespuesta: "Enqueue()", isCorrect: false },
+            { textoRespuesta: "Dequeue()", isCorrect: false },
+            { textoRespuesta: "Peek()", isCorrect: true },
+            { textoRespuesta: "Poll()", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es la diferencia principal entre una pila y una cola de prioridad en C#?",
+        opciones: [
+            { textoRespuesta: "Una pila sigue el principio FIFO, mientras que una cola de prioridad sigue el principio LIFO.", isCorrect: false },
+            { textoRespuesta: "Una pila tiene un tamaño fijo, mientras que una cola de prioridad puede crecer dinámicamente.", isCorrect: false },
+            { textoRespuesta: "Una cola de prioridad asigna una prioridad a cada elemento, mientras que una pila no.", isCorrect: true },
+            { textoRespuesta: "Una pila utiliza una lista enlazada, mientras que una cola de prioridad utiliza un arreglo.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál de las siguientes es una dirección IP de clase B?",
+        opciones: [
+            { textoRespuesta: "192.168.0.1", isCorrect: false },
+            { textoRespuesta: "172.16.0.1", isCorrect: true },
+            { textoRespuesta: "10.0.0.1", isCorrect: false },
+            { textoRespuesta: "224.0.0.1", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué máscara de subred se utiliza típicamente para una red de clase C?",
+        opciones: [
+            { textoRespuesta: "255.0.0.0", isCorrect: false },
+            { textoRespuesta: "255.255.0.0", isCorrect: false },
+            { textoRespuesta: "255.255.255.0", isCorrect: true },
+            { textoRespuesta: "255.255.255.255", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué protocolo se utiliza para asignar automáticamente direcciones IP a los dispositivos en una red?",
+        opciones: [
+            { textoRespuesta: "DNS", isCorrect: false },
+            { textoRespuesta: "HTTP", isCorrect: false },
+            { textoRespuesta: "DHCP", isCorrect: true },
+            { textoRespuesta: "FTP", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué rango de direcciones IP se considera privado y no se enruta a través de Internet?",
+        opciones: [
+            { textoRespuesta: "169.254.0.0 - 169.254.255.255", isCorrect: false },
+            { textoRespuesta: "192.168.0.0 - 192.168.255.255", isCorrect: true },
+            { textoRespuesta: "224.0.0.0 - 239.255.255.255", isCorrect: false },
+            { textoRespuesta: "240.0.0.0 - 255.255.255.255", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué dirección IP se utiliza para la difusión (broadcast) en una red de clase C con la dirección de red 192.168.1.0?",
+        opciones: [
+            { textoRespuesta: "192.168.1.0", isCorrect: false },
+            { textoRespuesta: "192.168.1.1", isCorrect: false },
+            { textoRespuesta: "192.168.1.254", isCorrect: false },
+            { textoRespuesta: "192.168.1.255", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Qué dirección IP corresponde a una red de clase A?",
+        opciones: [
+            { textoRespuesta: "10.0.0.1", isCorrect: true },
+            { textoRespuesta: "172.31.255.255", isCorrect: false },
+            { textoRespuesta: "192.168.100.1", isCorrect: false },
+            { textoRespuesta: "224.0.0.1", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál de las siguientes es una característica principal de la topología en estrella?",
+        opciones: [
+            { textoRespuesta: "Todos los nodos están conectados a un único cable central.", isCorrect: false },
+            { textoRespuesta: "Cada nodo está conectado directamente a todos los demás nodos.", isCorrect: false },
+            { textoRespuesta: "Todos los nodos están conectados a un nodo central.", isCorrect: true },
+            { textoRespuesta: "Los nodos están conectados en un anillo cerrado.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué topología de red utiliza una configuración de anillo en la que los datos viajan en una única dirección?",
+        opciones: [
+            { textoRespuesta: "Topología de estrella", isCorrect: false },
+            { textoRespuesta: "Topología de bus", isCorrect: false },
+            { textoRespuesta: "Topología de anillo", isCorrect: true },
+            { textoRespuesta: "Topología de malla", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué topología es más adecuada para una red donde la redundancia y la tolerancia a fallos son cruciales?",
+        opciones: [
+            { textoRespuesta: "Topología de bus", isCorrect: false },
+            { textoRespuesta: "Topología de anillo", isCorrect: false },
+            { textoRespuesta: "Topología de estrella", isCorrect: false },
+            { textoRespuesta: "Topología de malla", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "En una topología de estrella, ¿qué sucede si el nodo central falla?",
+        opciones: [
+            { textoRespuesta: "Toda la red sigue funcionando sin interrupciones.", isCorrect: false },
+            { textoRespuesta: "Solo fallan los nodos directamente conectados al nodo central.", isCorrect: false },
+            { textoRespuesta: "Toda la red se cae.", isCorrect: true },
+            { textoRespuesta: "La red se convierte automáticamente en una topología de bus.", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es la longitud en bits de una dirección IPv4?",
+        opciones: [
+            { textoRespuesta: "32 bits", isCorrect: true },
+            { textoRespuesta: "64 bits", isCorrect: false },
+            { textoRespuesta: "128 bits", isCorrect: false },
+            { textoRespuesta: "256 bits", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál de las siguientes es una dirección IPv6 válida?",
+        opciones: [
+            { textoRespuesta: "192.168.1.1", isCorrect: false },
+            { textoRespuesta: "10.0.0.1", isCorrect: false },
+            { textoRespuesta: "FE80::0202:B3FF:FE1E:8329", isCorrect: true },
+            { textoRespuesta: "172.16.0.1", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué notación se utiliza para representar las direcciones IPv6?",
+        opciones: [
+            { textoRespuesta: "Decimal con puntos", isCorrect: false },
+            { textoRespuesta: "Binaria", isCorrect: false },
+            { textoRespuesta: "Hexadecimal con dos puntos", isCorrect: true },
+            { textoRespuesta: "Octal", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuántos bits tiene una dirección IPv6?",
+        opciones: [
+            { textoRespuesta: "32 bits", isCorrect: false },
+            { textoRespuesta: "64 bits", isCorrect: false },
+            { textoRespuesta: "128 bits", isCorrect: true },
+            { textoRespuesta: "256 bits", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuál es la longitud de una dirección MAC?",
+        opciones: [
+            { textoRespuesta: "32 bits", isCorrect: false },
+            { textoRespuesta: "48 bits", isCorrect: true },
+            { textoRespuesta: "64 bits", isCorrect: false },
+            { textoRespuesta: "128 bits", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué tecnología se utiliza para crear una red privada segura a través de una red pública como Internet?",
+        opciones: [
+            { textoRespuesta: "VLAN", isCorrect: false },
+            { textoRespuesta: "VPN", isCorrect: true },
+            { textoRespuesta: "WLAN", isCorrect: false },
+            { textoRespuesta: "LAN", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Si una PC no puede obtener una dirección IP automáticamente, ¿qué podría estar fallando en la red?",
+        opciones: [
+            { textoRespuesta: "El servidor DNS", isCorrect: false },
+            { textoRespuesta: "El servidor DHCP", isCorrect: true },
+            { textoRespuesta: "El servidor FTP", isCorrect: false },
+            { textoRespuesta: "El servidor HTTP", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "Si dos PCs en la misma red local no pueden comunicarse entre sí, ¿cuál de los siguientes comandos en la línea de comandos de Windows puede ayudar a identificar el problema?",
+        opciones: [
+            { textoRespuesta: "ping", isCorrect: true },
+            { textoRespuesta: "ipconfig", isCorrect: true },
+            { textoRespuesta: "tracert", isCorrect: true },
+            { textoRespuesta: "Todas son correctas", isCorrect: true }
+        ]
+    },
+    {
+        titulo: "¿Cuál de las siguientes configuraciones de dirección IP es válida para una red con la dirección 192.168.1.0/24?",
+        opciones: [
+            { textoRespuesta: "Dirección IP: 192.168.1.256, Máscara de subred: 255.255.255.0", isCorrect: false },
+            { textoRespuesta: "Dirección IP: 192.168.2.1, Máscara de subred: 255.255.255.0", isCorrect: false },
+            { textoRespuesta: "Dirección IP: 192.168.1.10, Máscara de subred: 255.255.255.0", isCorrect: true },
+            { textoRespuesta: "Dirección IP: 10.0.0.1, Máscara de subred: 255.0.0.0", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Cuántas subredes y hosts por subred se pueden obtener si se usa una máscara de subred 255.255.255.192 en una red clase C?",
+        opciones: [
+            { textoRespuesta: "2 subredes, 126 hosts por subred", isCorrect: false },
+            { textoRespuesta: "4 subredes, 62 hosts por subred", isCorrect: true },
+            { textoRespuesta: "6 subredes, 30 hosts por subred", isCorrect: false },
+            { textoRespuesta: "8 subredes, 14 hosts por subred", isCorrect: false }
+        ]
+    },
+    {
+        titulo: "¿Qué indica una respuesta exitosa del comando ping?",
+        opciones: [
+            { textoRespuesta: "La dirección IP está configurada incorrectamente", isCorrect: false },
+            { textoRespuesta: "La red está congestionada", isCorrect: false },
+            { textoRespuesta: "Hay conectividad entre los dispositivos", isCorrect: true },
+            { textoRespuesta: "El dispositivo de destino está apagado", isCorrect: false }
+        ]
+    }
 ];
-
-export default preguntas;
