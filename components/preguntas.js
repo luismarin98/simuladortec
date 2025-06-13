@@ -541,3 +541,5 @@ const preguntas = [
         ]
     }
 ];
+
+export default preguntas;
